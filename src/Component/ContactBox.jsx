@@ -8,7 +8,7 @@ import { IoCallOutline } from "react-icons/io5";
 export default function ContactBox({ type, value }) {
   return (
     <div className="flex items-center gap-7 mb-10">
-      <div className="p-5 text-3xl rounded-2xl bg-gradient-to-br from-[#313030] to-[#0e0d0d]  border-[#31303034]">
+      <div className="p-5 text-3xl rounded-2xl bg-gradient-to-br from-[#313030] to-[#0e0d0d]">
         {(type === "email" && <HiOutlineMail />) ||
           (type === "call" && <IoCallOutline />) ||
           (type === "location" && <IoLocationOutline />)}
@@ -25,6 +25,7 @@ export default function ContactBox({ type, value }) {
             (type === "call" && "tel:+2349033387545") ||
             (type === "location" && "#")
           }
+          className="font-semibold text-lg"
         >
           {value}
         </a>

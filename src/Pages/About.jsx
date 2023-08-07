@@ -8,7 +8,8 @@ import { FiLinkedin, FiTwitter } from "react-icons/fi";
 import SmallBox from "../Component/SmallBox";
 import GridLayout from "../Layout/GridLayout";
 import { RiCustomerService2Fill } from "react-icons/ri";
-import { SiBuildkite, SiGithub } from "react-icons/si"; 
+import { SiBuildkite, SiGithub } from "react-icons/si";
+import Social from "../Component/Social";
 
 export default function About() {
   const [darkMode, setDarkMode] = useOutletContext();
@@ -118,55 +119,46 @@ export default function About() {
               darkMode
                 ? "from-[#313030] to-[#0e0d0d] border-[#31303034]"
                 : "border-[#0000006f]"
-            } flex gap-5 mb-2 p-5 rounded-[40px] bg-gradient-to-br  border-2 `}
+            } flex justify-evenly    gap-3 mb-2 p-5 rounded-[40px] bg-gradient-to-br border-2 `}
           >
-            <a
-              href="https://www.linkedin.com/in/michael-ukpong-178a5811a/"
-              target="__blank"
-            >
+            <Social link="https://www.linkedin.com/in/michael-ukpong-178a5811a/">
               <div
                 className={
                   darkMode
-                    ? "p-8 bg-[#0000001a] text-white hover:text-black hover:bg-[#fff] transition-all duration-200 rounded-full"
-                    : "p-8 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
+                    ? "p-5 bg-[#0000001a] text-white hover:text-black hover:bg-[#fff] transition-all duration-200 rounded-full"
+                    : "p-5 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <SiGithub className="" size={20} />
+                <FiLinkedin size={30} />
               </div>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/michael-ukpong-178a5811a/"
-              target="__blank"
-            >
+            </Social>
+            <Social link="https://twitter.com/Uksonmike">
               <div
                 className={
                   darkMode
-                    ? "p-8 bg-[#0000001a] text-white hover:text-black hover:bg-[#fff] transition-all duration-200 rounded-full"
-                    : "p-8 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
+                    ? "p-5 bg-[#0000001a] text-white hover:text-black hover:bg-[#fff] transition-all duration-200 rounded-full"
+                    : "p-5 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <FiLinkedin className="" size={20} />
+                <FiTwitter className="" size={30} />
               </div>
-            </a>
-            <a href="https://twitter.com/Uksonmike" target="__blank">
+            </Social>
+            <Social link="https://github.com/Uksonmike">
               <div
                 className={
                   darkMode
-                    ? "p-8 bg-[#0000001a] text-white hover:text-black hover:bg-[#fff] transition-all duration-200 rounded-full"
-                    : "p-8 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
+                    ? "p-5 bg-[#0000001a] text-white hover:text-black hover:bg-[#fff] transition-all duration-200 rounded-full"
+                    : "p-5 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <FiTwitter className="" size={20} />
+                <SiGithub size={30} />
               </div>
-            </a>
+            </Social>
           </div>
         </SmallBox>
         <SmallBox text="Let's Work Together" name="Projects" mode={darkMode}>
-          <div className="p-2 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
-            <SiBuildkite
-              color={darkMode ? "#fff" : "black"}
-              size={100}
-            />
+          <div className="p-5 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
+            <SiBuildkite color={darkMode ? "#fff" : "black"} size={100} />
           </div>
         </SmallBox>
       </GridLayout>
