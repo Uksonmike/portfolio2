@@ -19,7 +19,7 @@ export default function Header({ state, setState }) {
       className={`
         ${
           state ? "bg-[#0F0F0F] text-[#8d8d8d]" : "bg-[#dbdbdb]"
-        } lg:px-28 px-5 py-5 hidden md:block transition-all duration-200`}
+        } lg:px-36 px-5 py-5 hidden md:block transition-all duration-200`}
     >
       <nav className="flex justify-between items-center">
         <NavLink to={""}>

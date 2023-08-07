@@ -17,7 +17,7 @@ export default function About() {
     <section
       className={`${
         darkMode ? "bg-[#0F0F0F]" : "bg-[#dbdbdb]"
-      } py-10  lg:px-28 px-5 `}
+      } py-10  lg:px-36 px-5 `}
     >
       <div className="grid grid-cols-12 gap-5">
         <div>

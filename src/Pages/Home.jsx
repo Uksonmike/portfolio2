@@ -25,7 +25,7 @@ export default function Home() {
     <section
       className={`${
         darkMode ? "bg-[#0F0F0F]" : "bg-[#dbdbdb]"
-      } py-10  lg:px-28 px-5 `}
+      } py-10  lg:px-36 px-5 `}
     >
       <GridLayout grid={"lg:grid-cols-2"}>
         <ReactangularBlock link="about" mode={darkMode} />
