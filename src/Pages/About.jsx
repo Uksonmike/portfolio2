@@ -20,7 +20,7 @@ export default function About() {
         darkMode ? "bg-[#0F0F0F]" : "bg-[#dbdbdb]"
       } py-10  lg:px-36 px-5 `}
     >
-      <div className="grid grid-cols-12 gap-5">
+      <div className="md:grid grid-cols-12 gap-5">
         <div>
           <div
             className={`h-[320px] p-5 rounded-3xl bg-gradient-to-br border-2 ${
@@ -41,11 +41,11 @@ export default function About() {
           </div>
         </div>
         <div>
-          <p className="text-6xl mb-5 text-center text-white font-bold uppercase">
+          <p className="lg:text-6xl text-4xl mb-5 text-center text-white font-bold uppercase">
             Summary
           </p>
           <div
-            className={`h-[240px] p-10 rounded-2xl bg-gradient-to-br border-2 ${
+            className={`lg:h-[240px] md:h-[260px] lg:p-10 p-5 rounded-2xl bg-gradient-to-br border-2 ${
               darkMode
                 ? "from-[#313030] to-[#0e0d0d]  border-[#31303034] text-[#fff]"
                 : "border-[#0000006f]"
@@ -64,9 +64,9 @@ export default function About() {
           </div>
         </div>
       </div>
-      <section className="grid grid-cols-2 gap-5 mt-5">
+      <section className="grid md:grid-cols-2 gap-5 mt-5">
         <div
-          className={` p-10 rounded-2xl bg-gradient-to-br border-2 ${
+          className={` lg:p-10 p-5 rounded-2xl bg-gradient-to-br border-2 ${
             darkMode
               ? "from-[#313030] to-[#0e0d0d]  border-[#31303034] text-[#fff]"
               : "border-[#0000006f]"
@@ -88,7 +88,7 @@ export default function About() {
           </Experience>
         </div>
         <div
-          className={`p-10 rounded-2xl bg-gradient-to-br border-2 ${
+          className={`lg:p-10 p-5 rounded-2xl bg-gradient-to-br border-2 ${
             darkMode
               ? "from-[#313030] to-[#0e0d0d]  border-[#31303034] text-[#fff]"
               : "border-[#0000006f]"
@@ -104,12 +104,12 @@ export default function About() {
           </Experience>
         </div>
       </section>
-      <GridLayout grid={"grid-cols-3 mt-7"}>
+      <GridLayout grid={"md:grid-cols-3 mt-7"}>
         <SmallBox text="Let's Work Together" name="Contact" mode={darkMode}>
-          <div className="p-2 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
+          <div className="p-5 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
             <RiCustomerService2Fill
               color={darkMode ? "#fff" : "black"}
-              size={100}
+              size={90}
             />
           </div>
         </SmallBox>
@@ -119,7 +119,7 @@ export default function About() {
               darkMode
                 ? "from-[#313030] to-[#0e0d0d] border-[#31303034]"
                 : "border-[#0000006f]"
-            } flex justify-evenly    gap-3 mb-2 p-5 rounded-[40px] bg-gradient-to-br border-2 `}
+            } flex justify-evenly lg:gap-3 gap-1 mb-2 p-5 rounded-[40px] bg-gradient-to-br border-2 `}
           >
             <Social link="https://www.linkedin.com/in/michael-ukpong-178a5811a/">
               <div
@@ -129,7 +129,7 @@ export default function About() {
                     : "p-5 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <FiLinkedin size={30} />
+                <FiLinkedin className="lg:text-[30px] text-[25px]" />
               </div>
             </Social>
             <Social link="https://twitter.com/Uksonmike">
@@ -140,7 +140,7 @@ export default function About() {
                     : "p-5 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <FiTwitter className="" size={30} />
+                <FiTwitter className="lg:text-[30px] text-[20px]" />
               </div>
             </Social>
             <Social link="https://github.com/Uksonmike">
@@ -151,7 +151,7 @@ export default function About() {
                     : "p-5 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <SiGithub size={30} />
+                <SiGithub className="lg:text-[30px] text-[20px]" />
               </div>
             </Social>
           </div>
