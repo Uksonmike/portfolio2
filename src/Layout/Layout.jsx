@@ -5,14 +5,19 @@ import Footer from "../Component/Footer";
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {
-    const [darkMode, setDarkMode] = React.useState(true)
+  const [darkMode, setDarkMode] = React.useState(true);
   return (
     <>
-      <Header state={darkMode} setState={setDarkMode}/>
-      <main>
-        <Outlet context={[darkMode, setDarkMode]}/>
-      </main>
-      <Footer state={darkMode}/>
+      <body className={`
+        ${
+          darkMode ? "bg-[#0F0F0F] text-[#8d8d8d]" : "bg-[#dbdbdb]"
+        }`}>
+        <Header state={darkMode} setState={setDarkMode} />
+        <main>
+          <Outlet context={[darkMode, setDarkMode]} />
+        </main>
+        <Footer state={darkMode} />
+      </body>
     </>
   );
 }
