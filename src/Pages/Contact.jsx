@@ -1,14 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { HiOutlineMail } from "react-icons/hi";
-import { IoLocationOutline } from "react-icons/io5";
-import { IoCallOutline } from "react-icons/io5";
 import { useOutletContext } from "react-router-dom";
 import ContactBox from "../Component/ContactBox";
 import Social from "../Component/Social";
 import { SiBuildkite, SiGithub } from "react-icons/si";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
+import MessageComponent from "../Component/MessageComponent";
 
 export default function Contact() {
   const [darkMode, setDarkMode] = useOutletContext();
@@ -71,34 +69,7 @@ export default function Contact() {
         <p className="lg:text-5xl text-3xl font-semibold lg:mb-10 mb-5">
           Let's work <span className="text-[#5B78F6]">together.</span>
         </p>
-        <form action="" className="flex flex-col gap-3">
-          <input
-            type="text"
-            placeholder="Name *"
-            className="bg-[#313030] px-5 py-3 rounded-xl block outline-none"
-          />
-          <input
-            type="email"
-            placeholder="Email *"
-            className="bg-[#313030] px-5 py-3 rounded-xl block outline-none"
-          />
-          <input
-            type="text"
-            placeholder="Subject *"
-            className="bg-[#313030] px-5 py-3 rounded-xl block outline-none"
-          />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="7"
-            placeholder="Message *"
-            className="bg-[#313030] px-5 py-3 rounded-xl block outline-none"
-          />
-          <button className="bg-[#313030] hover:bg-[#fff] hover:text-[#333] transition-all duration-200 px-5 py-3 rounded-xl">
-            Send Message
-          </button>
-        </form>
+        <MessageComponent/>
       </div>
     </section>
   );
