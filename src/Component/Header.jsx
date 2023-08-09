@@ -41,7 +41,7 @@ export default function Header({ state, setState }) {
             <li>About</li>
           </NavLink>
           <NavLink
-            to={"projects"}
+            to={"project"}
             style={({ isActive }) => (isActive ? activeStyle : null)}
             className={state ? "hover:text-[#fff] transition-all duration-200" : ""}
           >

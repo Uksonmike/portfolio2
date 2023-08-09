@@ -29,7 +29,7 @@ export default function Footer({state}) {
           <li>About</li>
         </NavLink>
         <NavLink
-          to={"projects"}
+          to={"project"}
          className={"hover:text-white transition-all duration-300"}
         >
           <li>Projects</li>
