@@ -10,6 +10,7 @@ import GridLayout from "../Layout/GridLayout";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { SiBuildkite, SiGithub } from "react-icons/si";
 import Social from "../Component/Social";
+import { Link } from "react-router-dom";
 
 export default function About() {
   const [darkMode, setDarkMode] = useOutletContext();
@@ -105,14 +106,16 @@ export default function About() {
         </div>
       </section>
       <GridLayout grid={"md:grid-cols-3 mt-7"}>
-        <SmallBox text="Let's Work Together" name="Contact" mode={darkMode}>
-          <div className="p-5 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
-            <RiCustomerService2Fill
-              color={darkMode ? "#fff" : "black"}
-              size={90}
-            />
-          </div>
-        </SmallBox>
+        <Link to="/contact">
+          <SmallBox text="Let's Work Together" name="Contact" mode={darkMode}>
+            <div className="p-5 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
+              <RiCustomerService2Fill
+                color={darkMode ? "#fff" : "black"}
+                size={90}
+              />
+            </div>
+          </SmallBox>
+        </Link>
         <SmallBox text="Stay with me" name="Profile" mode={darkMode}>
           <div
             className={`${
@@ -156,11 +159,13 @@ export default function About() {
             </Social>
           </div>
         </SmallBox>
-        <SmallBox text="Let's Work Together" name="Projects" mode={darkMode}>
-          <div className="p-5 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
-            <SiBuildkite color={darkMode ? "#fff" : "black"} size={100} />
-          </div>
-        </SmallBox>
+        <Link to="/project">
+          <SmallBox text="Let's Work Together" name="Projects" mode={darkMode}>
+            <div className="p-5 mb-2 bg-[#0000001a] hover:bg-[#00000054] transition-all duration-200 rounded-full m-auto">
+              <SiBuildkite color={darkMode ? "#fff" : "black"} size={100} />
+            </div>
+          </SmallBox>
+        </Link>
       </GridLayout>
     </section>
   );

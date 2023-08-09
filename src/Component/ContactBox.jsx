@@ -14,7 +14,7 @@ export default function ContactBox({ type, value }) {
           (type === "location" && <IoLocationOutline />)}
       </div>
       <div>
-        <p className="text-[#9f9f9f] uppercase">{
+        <p className="text-[#9f9f9f] text-xs uppercase">{
             (type === "email" && "Mail Us") ||
             (type === "call" && "Contact Us") ||
             (type === "location" && "Location")

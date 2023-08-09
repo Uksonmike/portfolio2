@@ -115,12 +115,12 @@ export default function MessageComponent() {
         "Us_ltJ4oEWZ5s2Lbl"
       )
       .then((result) => {
-        console.log(result.text);
+        // console.log(result.text);
         setFormData({
           name: "",
           email: "",
           subject: "",
-          message: "",
+          message: "",  
         });
       })
       .catch((error) => {
