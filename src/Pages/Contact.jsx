@@ -15,7 +15,7 @@ export default function Contact() {
     <section
       className={`${
         darkMode ? "bg-[#0F0F0F] text-white" : "bg-[#dbdbdb]"
-      } lg:py-20 py-[114px] lg:px-36 px-5 flex md:flex-row flex-col gap-5`}
+      } lg:py-20 py-[50px] lg:px-36 px-5 flex md:flex-row flex-col gap-5`}
     >
       <div className="lg:w-[40%]">
         <p>Contact Info</p>
