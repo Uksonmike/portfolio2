@@ -52,7 +52,7 @@ export default function About() {
                 : "border-[#0000006f]"
             }`}
           >
-            <p className="text-4xl font-semibold mb-2">Michael Ukpong</p>
+            <p className="text-4xl font-semibold mb-2">ANOM A.F</p>
             <p className="text-md">
               I am highly motivated and ambitious, driven by a deep passion for
               everything related to technology. I possess a strong desire for
@@ -65,7 +65,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <section className="grid md:grid-cols-2 gap-5 mt-5">
+      <section className="grid md:grid-cols-1 gap-5 mt-5">
         <div
           className={` lg:p-10 p-5 rounded-2xl bg-gradient-to-br border-2 ${
             darkMode
@@ -88,7 +88,7 @@ export default function About() {
             />
           </Experience>
         </div>
-        <div
+        {/* <div
           className={`lg:p-10 p-5 rounded-2xl bg-gradient-to-br border-2 ${
             darkMode
               ? "from-[#313030] to-[#0e0d0d]  border-[#31303034] text-[#fff]"
@@ -103,7 +103,7 @@ export default function About() {
               location={"Akwa Ibom, Nigeria."}
             />
           </Experience>
-        </div>
+        </div> */}
       </section>
       <GridLayout grid={"md:grid-cols-3 mt-7"}>
         <Link to="/contact">

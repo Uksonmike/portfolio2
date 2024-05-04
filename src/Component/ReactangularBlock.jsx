@@ -32,9 +32,9 @@ export default function ReactangularBlock({ mode, link }) {
           <p
             className={`${
               mode ? "text-white transition-all duration-200" : " "
-            } lg:text-6xl sm:text-5xl text-3xl  font-semibold my-4`}
+            } lg:text-5xl sm:text-5xl text-3xl  font-semibold my-4`}
           >
-            Michael Ukpong.
+            ANOM A.F
           </p>
           <p className="font-medium sm:text-base text-xs">
             I am Frontend Developer based in Lagos, Nigeria.

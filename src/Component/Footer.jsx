@@ -14,7 +14,7 @@ export default function Footer({state}) {
       
   return (
     <footer className={`${state ? 'bg-[#0F0F0F] text-[#8d8d8d]' : 'bg-[#dbdbdb]'} py-10 w-full text-center flex flex-col items-center transition-all duration-200`}>
-      <p className={`${state ? "text-white" : "text-[#333]"} text-2xl font-bold `}>Uksonmike</p>
+      <p className={`${state ? "text-white" : "text-[#333]"} text-2xl font-bold `}>ANOM A.F</p>
       <ul className="flex flex-col md:flex-row text-xs gap-8 font-medium my-6">
         <NavLink
           to={""}

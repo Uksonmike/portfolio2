@@ -78,7 +78,7 @@ export default function Header({ state, setState }) {
                 state ? "text-white" : "text-[#333]"
               } text-2xl font-bold `}
             >
-              Mike.dev
+              A.F
             </p>
           </NavLink>
           <ul className="flex gap-10 font-medium">
