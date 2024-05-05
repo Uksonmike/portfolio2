@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import headshot from "../assets/Headshot.jpg";
+import headshot from "../assets/anom.jpg";
 import { Link } from "react-router-dom";
 
 export default function ReactangularBlock({ mode, link }) {

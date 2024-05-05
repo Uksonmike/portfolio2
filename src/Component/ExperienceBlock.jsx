@@ -7,9 +7,10 @@ export default function ExperienceBlock({duration, role, company, location}) {
     <div className="mb-5">
       <p className="text-[#9f9f9f] mb-2">{duration}</p>
       <p>
-        <span className="text-[#fff] block lg:text-2xl text-xl font-medium">
+        <span className="text-[#fff] lg:text-2xl text-xl font-medium">
           {role}
-        </span>
+        </span> - 
+        {"    "}
         <span className="text-[#9f9f9f] font-medium">
           {company} - <i className="font-normal">{location}</i>
         </span>

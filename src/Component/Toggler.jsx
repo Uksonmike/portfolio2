@@ -14,14 +14,14 @@ export default function Toggler({ state, toggle, file }) {
         {state ? <MdToggleOn color={state ? "white" : "black"} /> : <MdOutlineToggleOff color={state ? "white" : "black"}/>}
       </button>
 
-      <a
+      {/* <a
         href={file}
         download
         className="flex items-center gap-2 bg-[#474747] text-[#fff] hover:bg-[#fff] hover:text-[#242424] px-3 py-2 rounded-2xl transition-all duration-300"
       >
         <AiOutlineCloudDownload />
         <p className="text-sm font-semibold">Resume</p>
-      </a>
+      </a> */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useOutletContext } from "react-router-dom";
-import headshot from "../assets/profile.jfif";
+import headshot from "../assets/anom.jpg";
 import Experience from "../Component/Experience";
 import ExperienceBlock from "../Component/ExperienceBlock";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
@@ -77,7 +77,7 @@ export default function About() {
             <ExperienceBlock
               duration={"Aug. 2022 - Till Date"}
               role={"Frontend Developer"}
-              company={"Schull Technologies"}
+              company={"Alt School"}
               location={"Lagos, Nigeria."}
             />
             <ExperienceBlock
@@ -124,7 +124,7 @@ export default function About() {
                 : "border-[#0000006f]"
             } flex justify-evenly lg:gap-3 gap-1 mb-2 p-5 rounded-[40px] bg-gradient-to-br border-2 `}
           >
-            <Social link="https://www.linkedin.com/in/michael-ukpong-178a5811a/">
+            <Social link="https://www.linkedin.com/in/anom-a-f-86398619b/">
               <div
                 className={
                   darkMode
@@ -135,7 +135,7 @@ export default function About() {
                 <FiLinkedin className="lg:text-[30px] text-[25px]" />
               </div>
             </Social>
-            <Social link="https://twitter.com/Uksonmike">
+            {/* <Social link="https://twitter.com/Uksonmike">
               <div
                 className={
                   darkMode
@@ -145,8 +145,8 @@ export default function About() {
               >
                 <FiTwitter className="lg:text-[30px] text-[20px]" />
               </div>
-            </Social>
-            <Social link="https://github.com/Uksonmike">
+            </Social> */}
+            {/* <Social link="https://github.com/Uksonmike">
               <div
                 className={
                   darkMode
@@ -156,7 +156,7 @@ export default function About() {
               >
                 <SiGithub className="lg:text-[30px] text-[20px]" />
               </div>
-            </Social>
+            </Social> */}
           </div>
         </SmallBox>
         <Link to="/project">

@@ -103,7 +103,7 @@ export default function Home() {
             } flex justify-evenly lg:gap-5 gap-2 mb-2 sm:p-5 p-3 rounded-[40px] bg-gradient-to-br  border-2 `}
           >
             <a
-              href="https://www.linkedin.com/in/michael-ukpong-178a5811a/"
+              href="https://www.linkedin.com/in/anom-a-f-86398619b/"
               target="__blank"
             >
               <div
@@ -116,7 +116,7 @@ export default function Home() {
                 <FiLinkedin className="lg:text-[30px] md:text-[20px] text-[30px]" />
               </div>
             </a>
-            <a href="https://twitter.com/Uksonmike" target="__blank">
+            {/* <a href="https://twitter.com/Uksonmike" target="__blank">
               <div
                 className={
                   darkMode
@@ -126,7 +126,7 @@ export default function Home() {
               >
                 <FiTwitter className="lg:text-[30px] md:text-[20px] text-[30px]" />
               </div>
-            </a>
+            </a> */}
           </div>
         </SmallBox>
       </GridLayout>

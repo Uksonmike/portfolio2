@@ -21,14 +21,14 @@ export default function Contact() {
         <p>Contact Info</p>
         <div className="md:mt-10 mt-5">
           <div>
-            <ContactBox type="email" value="michaelukpongson91@gmail.com" />
-            <ContactBox type="call" value="(+234) 903 338 7545" />
+            <ContactBox type="email" value="10noshcone@gmail.com" />
+            <ContactBox type="call" value="(+234) 813 2138 721" />
             <ContactBox type="location" value="Lagos, NG." />
           </div>
           <div className="mb-10 md:mb-0">
             <p className="font-semibold">Socials</p>
             <div className="flex gap-4 md:mt-10 mt-5">
-              <Social link="https://www.linkedin.com/in/michael-ukpong-178a5811a/">
+              <Social link="https://www.linkedin.com/in/anom-a-f-86398619b/">
                 <div
                   className={
                     darkMode
@@ -39,7 +39,7 @@ export default function Contact() {
                   <FiLinkedin size={25} />
                 </div>
               </Social>
-              <Social link="https://twitter.com/Uksonmike">
+              {/* <Social link="https://twitter.com/Uksonmike">
                 <div
                   className={
                     darkMode
@@ -49,8 +49,8 @@ export default function Contact() {
                 >
                   <FiTwitter size={25} />
                 </div>
-              </Social>
-              <Social link="https://github.com/Uksonmike">
+              </Social> */}
+              {/* <Social link="https://github.com/Uksonmike">
                 <div
                   className={
                     darkMode
@@ -60,7 +60,7 @@ export default function Contact() {
                 >
                   <SiGithub size={25} />
                 </div>
-              </Social>
+              </Social> */}
             </div>
           </div>
         </div>

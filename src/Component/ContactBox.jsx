@@ -14,15 +14,15 @@ export default function ContactBox({ type, value }) {
           (type === "location" && <IoLocationOutline />)}
       </div>
       <div>
-        <p className="text-[#9f9f9f] text-xs uppercase">{
-            (type === "email" && "Mail Us") ||
+        <p className="text-[#9f9f9f] text-xs uppercase">
+          {(type === "email" && "Mail Us") ||
             (type === "call" && "Contact Us") ||
-            (type === "location" && "Location")
-          }</p>
+            (type === "location" && "Location")}
+        </p>
         <a
           href={
-            (type === "email" && "mailto:michaelukpongson91@gmail.com") ||
-            (type === "call" && "tel:+2349033387545") ||
+            (type === "email" && `mailto:${value}`) ||
+            (type === "call" && "tel:+2348132138721") ||
             (type === "location" && "#")
           }
           className="font-semibold lg:text-lg text-base"
