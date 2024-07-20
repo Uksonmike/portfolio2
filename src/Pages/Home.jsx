@@ -46,13 +46,17 @@ export default function Home() {
             />
           </div>
           <GridLayout grid={"md:grid md:grid-cols-2"}>
-            <Link to={"resume"}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1bn1E2Rsi-NNiO1v5rHsMHLDIMfkP2TQ4/view?usp=sharing"
+            >
               <SmallBox text="More About Me" name="Resume" mode={darkMode}>
                 <div className="w-[150px] rounded-lg overflow-hidden m-auto mb-5">
                   <img src={darkMode ? signature : signatureblack} alt="" />
                 </div>
               </SmallBox>
-            </Link>
+            </a>
             <Link to={"project"}>
               <SmallBox text="Showcase" name="Projects" mode={darkMode}>
                 <div className="w-[150px] rounded-lg overflow-hidden m-auto mb-5">

@@ -2,21 +2,23 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
-import {
-  MdToggleOn,
-  MdOutlineToggleOff,
-} from "react-icons/md";
+import { MdToggleOn, MdOutlineToggleOff } from "react-icons/md";
 
 export default function Toggler({ state, toggle, file }) {
   return (
     <div className="flex items-center gap-2">
       <button onClick={toggle}>
-        {state ? <MdToggleOn color={state ? "white" : "black"} /> : <MdOutlineToggleOff color={state ? "white" : "black"}/>}
+        {state ? (
+          <MdToggleOn color={state ? "white" : "black"} />
+        ) : (
+          <MdOutlineToggleOff color={state ? "white" : "black"} />
+        )}
       </button>
 
       <a
-        href={file}
-        download
+        href="https://drive.google.com/file/d/1bn1E2Rsi-NNiO1v5rHsMHLDIMfkP2TQ4/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
         className="flex items-center gap-2 bg-[#474747] text-[#fff] hover:bg-[#fff] hover:text-[#242424] px-3 py-2 rounded-2xl transition-all duration-300"
       >
         <AiOutlineCloudDownload />

@@ -69,7 +69,7 @@ export default function Contact() {
         <p className="lg:text-5xl text-3xl font-semibold lg:mb-10 mb-5">
           Let's work <span className="text-[#5B78F6]">together.</span>
         </p>
-        <MessageComponent/>
+        <MessageComponent />
       </div>
     </section>
   );
