@@ -8,7 +8,7 @@ import {
 import Layout from "./Layout/Layout";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Resume from "./Pages/Resume";
+// import Resume from "./Pages/Resume";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 
@@ -18,7 +18,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="resume" element={<Resume />} />
+      {/* <Route path="resume" element={<Resume />} /> */}
       <Route path="project" element={<Projects />} />
     </Route>
   )

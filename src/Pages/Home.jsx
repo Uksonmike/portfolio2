@@ -17,6 +17,7 @@ import { FiLinkedin, FiTwitter } from "react-icons/fi";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { useOutletContext } from "react-router-dom";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../Component/ScrollToTop";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useOutletContext();
@@ -26,7 +27,7 @@ export default function Home() {
       className={`${
         darkMode ? "bg-[#0F0F0F]" : "bg-[#dbdbdb]"
       } py-10  lg:px-36 px-5 `}
-    >
+    ><ScrollToTop/>
       <GridLayout grid={"lg:grid-cols-2"}>
         <ReactangularBlock link="about" mode={darkMode} />
         <div className="flex flex-col gap-5">

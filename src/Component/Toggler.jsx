@@ -7,13 +7,13 @@ import { MdToggleOn, MdOutlineToggleOff } from "react-icons/md";
 export default function Toggler({ state, toggle, file }) {
   return (
     <div className="flex items-center gap-2">
-      <button onClick={toggle}>
+      {/* <button onClick={toggle}>
         {state ? (
           <MdToggleOn color={state ? "white" : "black"} />
         ) : (
           <MdOutlineToggleOff color={state ? "white" : "black"} />
         )}
-      </button>
+      </button> */}
 
       <a
         href="https://drive.google.com/file/d/1bn1E2Rsi-NNiO1v5rHsMHLDIMfkP2TQ4/view?usp=sharing"
