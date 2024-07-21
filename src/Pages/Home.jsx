@@ -2,18 +2,18 @@
 import React from "react";
 import signature from "../assets/signature.png";
 import signatureblack from "../assets/signatureblack.png";
-import html from "../assets/html.png";
-import sass from "../assets/sass.png";
+// import html from "../assets/html.png";
+// import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import js from "../assets/js.png";
 import react from "../assets/react.png";
-import figma from "../assets/figma.png";
-import github from "../assets/github.png";
+// import figma from "../assets/figma.png";
+// import github from "../assets/github.png";
 import GridLayout from "../Layout/GridLayout";
 import Typer from "../Component/Typer";
 import ReactangularBlock from "../Component/ReactangularBlock";
 import SmallBox from "../Component/SmallBox";
-import { FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { useOutletContext } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -118,7 +118,7 @@ export default function Home() {
                     : "lg:p-8 md:p-4 sm:p-8 p-4 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <FiLinkedin className="lg:text-[30px] md:text-[20px] text-[30px]" />
+                <FaLinkedin className="lg:text-[30px] md:text-[20px] text-[30px]" />
               </div>
             </a>
             <a href="https://twitter.com/Uksonmike" target="__blank">
@@ -129,7 +129,7 @@ export default function Home() {
                     : "lg:p-8 md:p-4 sm:p-8 p-4 bg-[#0000001a] text-black hover:bg-[#00000054] transition-all duration-200 rounded-full"
                 }
               >
-                <FiTwitter className="lg:text-[30px] md:text-[20px] text-[30px]" />
+                <FaTwitter className="lg:text-[30px] md:text-[20px] text-[30px]" />
               </div>
             </a>
           </div>
