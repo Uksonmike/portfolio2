@@ -4,6 +4,7 @@ import rvservices from "../assets/rvservices.png";
 import ayfood from "../assets/ayfood.png";
 import gharvest from "../assets/gharvest.png";
 import techcare from "../assets/techcare.png";
+import rvadmin from "../assets/rv-admin.png";
 import ProjectComponent from "../Component/ProjectComponent";
 import ScrollToTop from "../Component/ScrollToTop";
 
@@ -24,8 +25,13 @@ export default function Projects() {
           <div className="grid gap-5">
             <ProjectComponent
               darkMode={darkMode}
+              img={rvadmin}
+              link="https://dashboard-rv-home.netlify.app/"
+            />
+            <ProjectComponent
+              darkMode={darkMode}
               img={rvservices}
-              link="http://rvserviceshomes.com.s3-website-us-east-1.amazonaws.com"
+              link="https://rv-services-homes.netlify.app/"
             />
             <ProjectComponent
               darkMode={darkMode}
