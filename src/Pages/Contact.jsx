@@ -7,6 +7,7 @@ import Social from "../Component/Social";
 import { SiBuildkite, SiGithub } from "react-icons/si";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
 import MessageComponent from "../Component/MessageComponent";
+import ScrollToTop from "../Component/ScrollToTop";
 
 export default function Contact() {
   const [darkMode, setDarkMode] = useOutletContext();
@@ -17,6 +18,7 @@ export default function Contact() {
         darkMode ? "bg-[#0F0F0F] text-white" : "bg-[#dbdbdb]"
       } lg:py-20 py-[50px] lg:px-36 px-5 flex md:flex-row flex-col gap-5`}
     >
+      <ScrollToTop />
       <div className="lg:w-[40%]">
         <p>Contact Info</p>
         <div className="md:mt-10 mt-5">
@@ -69,7 +71,7 @@ export default function Contact() {
         <p className="lg:text-5xl text-3xl font-semibold lg:mb-10 mb-5">
           Let's work <span className="text-[#5B78F6]">together.</span>
         </p>
-        <MessageComponent/>
+        <MessageComponent />
       </div>
     </section>
   );

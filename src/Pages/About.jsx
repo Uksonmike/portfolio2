@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useOutletContext } from "react-router-dom";
-import headshot from "../assets/profile.jfif";
+import headshot from "../assets/Headshot.jpg";
 import Experience from "../Component/Experience";
 import ExperienceBlock from "../Component/ExperienceBlock";
 import { FiLinkedin, FiTwitter } from "react-icons/fi";
@@ -11,6 +11,7 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { SiBuildkite, SiGithub } from "react-icons/si";
 import Social from "../Component/Social";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../Component/ScrollToTop";
 
 export default function About() {
   const [darkMode, setDarkMode] = useOutletContext();
@@ -21,26 +22,9 @@ export default function About() {
         darkMode ? "bg-[#0F0F0F]" : "bg-[#dbdbdb]"
       } py-10  lg:px-36 px-5 `}
     >
-      <div className="md:grid grid-cols-12 gap-5">
-        <div>
-          <div
-            className={`h-[320px] p-5 rounded-3xl bg-gradient-to-br border-2 ${
-              darkMode
-                ? "from-[#313030] to-[#0e0d0d]  border-[#31303034] text-[#9f9f9f]"
-                : "border-[#0000006f]"
-            }`}
-          >
-            <div
-              style={{
-                backgroundImage: `url("${headshot}")`,
-                backgroundPosition: "top",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-              className="w-full h-full rounded-3xl"
-            ></div>
-          </div>
-        </div>
+      <ScrollToTop />
+      <div className="">
+        <div></div>
         <div>
           <p className="lg:text-6xl text-4xl mb-5 text-center text-white font-bold uppercase">
             Summary
@@ -54,13 +38,12 @@ export default function About() {
           >
             <p className="text-4xl font-semibold mb-2">Michael Ukpong</p>
             <p className="text-md">
-              I am highly motivated and ambitious, driven by a deep passion for
-              everything related to technology. I possess a strong desire for
-              personal and professional growth, constantly seeking new knowledge
-              and skills. With a keen eye for detail, I prioritize writing clean
-              and efficient code. Currently, I am actively seeking an
-              exceptional opportunity that will allow me to flourish and advance
-              my career as a software engineer.
+              Highly motivated and ambitious tech enthusiast, a fast learner
+              with a deep commitment to personal and professional growth.
+              Diligent in my work, with a focus on writing clean, efficient
+              code. Looking for an exciting opportunity in an environment that
+              fosters continuous learning, allowing me to progress toward my
+              goal of becoming a skilled software engineer.
             </p>
           </div>
         </div>
@@ -78,13 +61,13 @@ export default function About() {
               duration={"Aug. 2022 - Till Date"}
               role={"Frontend Developer"}
               company={"Schull Technologies"}
-              location={"Lagos, Nigeria."}
+              location={"Lagos, Nigeria"}
             />
             <ExperienceBlock
-              duration={"Nov. 2023 - Jan. 2024"}
-              role={"Backend Developer Intern"}
-              company={"Univelcity"}
-              location={"Lagos, Nigeria."}
+              duration={"Apr. 2024"}
+              role={"Quality Analyst, AI Ops"}
+              company={"Hugo Technologies"}
+              location={"Illinois, US"}
             />
           </Experience>
         </div>
