@@ -50,7 +50,7 @@ export default function Home() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://drive.google.com/file/d/1bn1E2Rsi-NNiO1v5rHsMHLDIMfkP2TQ4/view?usp=sharing"
+              href="https://drive.google.com/file/d/17GBuLluQEIFLVqjOZYKFXUMqbNylS8EC/view?usp=drive_link"
             >
               <SmallBox text="More About Me" name="Resume" mode={darkMode}>
                 <div className="w-[150px] rounded-lg overflow-hidden m-auto mb-5">

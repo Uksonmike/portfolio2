@@ -28,7 +28,9 @@ export default function ReactangularBlock({ mode, link }) {
             mode ? "text-[#9f9f9f] transition-all duration-200" : " "
           } flex flex-col justify-center `}
         >
-          <p className="uppercase font-medium sm:text-base text-xs">A Frontend Developer</p>
+          <p className="uppercase font-medium sm:text-base text-xs">
+            A Frontend Developer
+          </p>
           <p
             className={`${
               mode ? "text-white transition-all duration-200" : " "
@@ -37,7 +39,7 @@ export default function ReactangularBlock({ mode, link }) {
             Michael Ukpong.
           </p>
           <p className="font-medium sm:text-base text-xs">
-            I am Frontend Developer based in Lagos, Nigeria.
+            I am Frontend Engineer based in Lagos, Nigeria.
           </p>
         </div>
       </div>

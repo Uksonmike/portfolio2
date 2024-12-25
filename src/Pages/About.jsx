@@ -38,12 +38,12 @@ export default function About() {
           >
             <p className="text-4xl font-semibold mb-2">Michael Ukpong</p>
             <p className="text-md">
-              Highly motivated and ambitious tech enthusiast, a fast learner
-              with a deep commitment to personal and professional growth.
-              Diligent in my work, with a focus on writing clean, efficient
-              code. Looking for an exciting opportunity in an environment that
-              fosters continuous learning, allowing me to progress toward my
-              goal of becoming a skilled software engineer.
+              A front-end engineer with 3 years of hands-on experience in
+              creating designs that work smoothly. I enjoy solving problems
+              creatively and take pride in building web applications that look
+              great and feel effortless to use. Working with others to bring
+              ideas to life is something I value, and I am always eager to learn
+              and take on new challenges to keep growing.
             </p>
           </div>
         </div>
@@ -59,8 +59,14 @@ export default function About() {
           <Experience title={"Experience"}>
             <ExperienceBlock
               duration={"Aug. 2022 - Till Date"}
-              role={"Frontend Developer"}
+              role={"Frontend Engineer"}
               company={"Schull Technologies"}
+              location={"Lagos, Nigeria"}
+            />
+            <ExperienceBlock
+              duration={"May. 2022 - Oct. 2023"}
+              role={"Frontend Engineer"}
+              company={"Stock Afrika"}
               location={"Lagos, Nigeria"}
             />
             <ExperienceBlock
