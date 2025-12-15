@@ -29,7 +29,7 @@ export default function ReactangularBlock({ mode, link }) {
           } flex flex-col justify-center `}
         >
           <p className="uppercase font-medium sm:text-base text-xs">
-            A Frontend Developer
+            A Software Developer
           </p>
           <p
             className={`${
@@ -39,7 +39,7 @@ export default function ReactangularBlock({ mode, link }) {
             Michael Ukpong.
           </p>
           <p className="font-medium sm:text-base text-xs">
-            I am Frontend Engineer based in Lagos, Nigeria.
+            I am Software Developer based in Lagos, Nigeria.
           </p>
         </div>
       </div>
